@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kitty pagina del saber</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+     
+<!-- NAVBAR FLOTANTE FINAL -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg"
+     style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
+            border-radius: 50px; width: 90%; z-index: 1000;">
+  <div class="container-fluid d-flex justify-content-between align-items-center px-4">
+
+    <!-- LOGO -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/menukitty-removebg-preview.png" alt="Kitty Ciencias" 
+           style="height:40px; width:auto; margin-right:8px;">
+    </a>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+      style="border:none; outline:none;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- LINKS -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="Todo.html">Temas</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="service.html">Actividades</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="product.html">Material de apoyo</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+    <!-- Navbar End -->
+     <div class="fondo">
+    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+        <div class="container text-center py-5">
+           <h1 class="text-white  display-3 mt-4">Célula</h1>
+        </div>
+    </div>
+</div>
+ <!-- Carta La célula -->
+  <h1 class="font-weight-bold mb-3">Todo sobre la célula</h1>
+  <div class="card-custom"
+    <div class="card-custom mb-4 p-3">
+      <h2 class="font-weight-bold mb-3">La célula ♥</h2>
+      <p>
+        La célula es la <b>unidad fundamental de la vida</b>, lo que significa que todos los seres vivos están formados por células. 
+        Puede funcionar por sí sola (como las bacterias) o formar parte de organismos más complejos, como las plantas, animales y seres humanos.
+      </p>
+    </div>
+    
+  </div>
+    <!-- Tarjetas abajo -->
+    
+   <div class="celula">
+  <h3 style="color:white;">Célula Procariota</h3>
+  <div class="organelos">
+
+      <ul>
+        <li>Membrana plasmática → regula el paso de sustancias</li>
+        <li>Citoplasma → medio de reacciones químicas</li>
+        <li>Ribosomas → fabrican proteínas</li>
+        <li>ADN → libre en el citoplasma</li>
+        <li>Pared celular → da forma y protección</li>
+        <li>Flagelos → movimiento</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Celula Eucariota -->
+      <div class="celula">
+  <h3 style="color:white;">Célula Eucariota</h3>
+  <div class="organelos">
+
+      <ul>
+        <li>Núcleo → contiene ADN</li>
+        <li>Mitocondria → produce energía</li>
+        <li>Ribosomas → sintetizan proteínas</li>
+        <li>R.E. Rugoso → fabrica proteínas</li>
+        <li>R.E. Liso → fabrica lípidos</li>
+        <li>Aparato de Golgi → transporta proteínas</li>
+        <li>Cloroplasto 🌱 → fotosíntesis</li>
+        <li>Vacuolas → almacenan agua y nutrientes</li>
+      </ul>
+    </div>
+  </div>
+
+    <!-- Header End -->
+
+
+    <!-- Products Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="section-title position-relative text-center mb-5">partes de la celula</h1>
+                </div>
+            </div>
+           
+            <section class="celulas">
+    <div class="tarjeta procariota" onclick="abrirModal('procariota')">
+      <h2>Procariota</h2>
+      <p>Simples pero poderosas</p>
+    </div>
+
+    <div class="tarjeta eucariota" onclick="abrirModal('eucariota')">
+      <h2>Eucariota</h2>
+      <p>Complejas y elegantes</p>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <div id="info-modal"></div>
+    </div>
+  </div>
+           
+                    
+          <script>
+    function abrirModal(tipo) {
+      const modal = document.getElementById("modal");
+      const info = document.getElementById("info-modal");
+
+      if (tipo === "procariota") {
+        info.innerHTML = `
+          <h2 style="color:#388e3c;"> Célula Procariota</h2>
+          <p>Las procariotas son células <strong>simples</strong> que <strong>no tienen núcleo definido</strong>.
+          Su ADN flota libremente en el citoplasma. Ejemplo: bacterias 🦠.</p>
+          <img src="img/procariota.jpg" 
+               alt="Procariota" width="400">
+        `;
+      } else {
+        info.innerHTML = `
+          <h2 style="color:#ad1457;"> Célula Eucariota</h2>
+          <p>Las eucariotas son <strong>más complejas</strong> y tienen un <strong>núcleo</strong> que protege el ADN.
+          Forman parte de plantas, animales y humanos .</p>
+          <img src="img/eucariota.png" 
+               alt="Eucariota" width="400">
+        `;
+      }
+
+      modal.style.display = "block";
+    }
+
+    function cerrarModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+                
+                 
+    <!-- Products End -->
+
+
+    <!-- Footer Start -->
+   <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <a href="index.html" class="navbar-brand m-0">
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">K</span>itty ciencia♥</h1>
+                    </a>
+                </div>
+                <div class="col-12 mb-4">
+
+                    <a class="btn btn-outline-secondary btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-12 mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
+                            <h5 class="font-weight-bold mb-2">Sobre nosotros</h5>
+                            <p class="mb-2">Colegio Celco Sogamoso</p>
+                            <p class="mb-0">+57 3184256005</p>
+                        </div>
+                        <div class="col-sm-6 text-center text-sm-left">
+                            <h5 class="font-weight-bold mb-2">Contactanos</h5>
+                            <p class="mb-2">kittyciencias@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

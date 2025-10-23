@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kitty pagina del saber</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="cucigrama.css">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+     <!-- NAVBAR FLOTANTE FINAL -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg"
+     style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
+            border-radius: 50px; width: 90%; z-index: 1000;">
+  <div class="container-fluid d-flex justify-content-between align-items-center px-4">
+
+    <!-- LOGO -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/menukitty-removebg-preview.png" alt="Kitty Ciencias" 
+           style="height:40px; width:auto; margin-right:8px;">
+    </a>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+      style="border:none; outline:none;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- LINKS -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="Todo.html">Temas</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="service.html">Actividades</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="product.html">Material de apoyo</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+    <!-- Navbar End -->
+    <!-- Header Start -->
+    <!-- Header Start -->
+<div class="fondo">
+    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+        <div class="container text-center py-5">
+            <h1 class="text-white  display-3 mt-4">Actividades</h1>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+ <div class="col-12 text-center">
+  <ul class="list-inline mb-4 pb-2" id="portfolio-filters">
+    <li class="list-inline-item m-1">
+      <a href="crucigrama.html" class="btn btn-sm btn-outline-primary" style="text-decoration:none; color:inherit;">Crucigrama</a>
+    </li>
+    <li class="list-inline-item m-1">
+      <a href="sopaletras.html" class="btn btn-sm btn-outline-primary" style="text-decoration:none; color:inherit;">Sopa de letras</a>
+    </li>
+     <li class="list-inline-item m-1">
+      <a href="juegos.html" class="btn btn-sm btn-outline-primary" style="text-decoration:none; color:inherit;">Más juegos</a>
+    </li>
+  </ul>
+</div>
+
+
+    <!-- Header End -->
+
+
+    <!-- Services Start -->
+     <!-- --- INICIO: bloque auto-contenido del crucigrama (reemplaza la sección antigua) --- -->
+<section id="crucigrama" class="no-green" aria-label="Crucigrama de Biología">
+  <style>
+    /* estilos propios y muy específicos para evitar conflictos con bootstrap */
+    #crucigrama { padding: 24px; background: transparent; }
+    #crucigrama .cru-container {
+      max-width: 920px;
+      margin: 0 auto;
+      background: #fff !important;
+      padding: 20px !important;
+      border-radius: 12px !important;
+      box-shadow: 0 6px 20px rgba(20,30,50,0.06) !important;
+    }
+    #crucigrama h1 { text-align:center; color:#e86f9a; margin:0 0 6px; font-size:32px; }
+    #crucigrama p.lead { text-align:center; color:#444; margin:0 0 18px; }
+
+    /* grid */
+    #crucigrama #crossword {
+      display: grid !important;
+      grid-template-columns: repeat(8, 48px) !important;
+      gap: 6px !important;
+      justify-content: center !important;
+      margin: 18px 0 !important;
+    }
+    #crucigrama .cell {
+      width: 48px !important; height: 48px !important;
+      background: #e9eef6 !important; border-radius:6px !important;
+      display:flex !important; align-items:center !important; justify-content:center !important;
+      position:relative !important;
+    }
+    #crucigrama .black { background:#2b2f36 !important; }
+    #crucigrama .cell input {
+      width:100% !important; height:100% !important; border:0 !important;
+      background:transparent !important; text-transform:uppercase !important;
+      font-weight:700 !important; font-size:18px !important; text-align:center !important;
+      outline:none !important;
+    }
+    #crucigrama .number {
+      position:absolute !important; top:4px !important; left:6px !important;
+      font-size:10px !important; color:#fff !important; opacity:.95 !important;
+    }
+
+    /* controles y pistas */
+    #crucigrama .controls { display:flex !important; gap:8px !important; justify-content:center !important; margin-bottom:12px !important; }
+    #crucigrama button { padding:8px 12px !important; border-radius:8px !important; border:0 !important; cursor:pointer !important; background:#2b99ff !important; color:#fff !important; font-weight:700 !important; }
+    #crucigrama button.secondary { background:#6b7280 !important; }
+    #crucigrama .clues { display:flex !important; gap:18px !important; justify-content:center !important; flex-wrap:wrap !important; margin-top:10px !important; }
+    #crucigrama .clue { background:#fbfcff !important; padding:8px 12px !important; border-radius:6px !important; border:1px solid #eef2ff !important; max-width:420px !important; }
+    #crucigrama .status { text-align:center !important; margin-top:10px !important; font-weight:600 !important; }
+
+    @media (max-width:720px) {
+      #crucigrama #crossword { grid-template-columns: repeat(8, 10vw) !important; }
+      #crucigrama .cell { width:10vw !important; height:10vw !important; }
+
+    }
+    /* Quitar hover en las celdas */
+#crucigrama .cell:hover {
+  background: #e9eef6 !important;  /* mismo color base */
+  transform: none !important;      /* por si algún CSS aplica escalado */
+  box-shadow: none !important;
+}
+
+/* Quitar hover en los inputs */
+#crucigrama .cell input:hover {
+  background: transparent !important;
+}
+
+/* Quitar hover en los botones del crucigrama */
+#crucigrama button:hover {
+  background: inherit !important;
+  color: inherit !important;
+  transform: none !important;
+}
+
+
+/* Desactivar animaciones/hover heredadas dentro del crucigrama */
+#crucigrama .cell,
+#crucigrama .cell input:hover {
+  transform: none !important;
+  transition: none !important;
+}
+
+  </style>
+
+  <div class="cru-container">
+    <h1>Crucigrama de Biología</h1>
+    <p class="lead">Llena las casillas con las palabras relacionadas con biología. Usa los botones para comprobar o revelar la solución.</p>
+
+    <div id="crossword" role="application" aria-label="Cuadrícula del crucigrama"></div>
+
+    <div class="controls">
+      <button id="checkBtn">Comprobar</button>
+      <button id="revealBtn" class="secondary">Revelar solución</button>
+      <button id="resetBtn" class="secondary">Reiniciar</button>
+    </div>
+
+    <div class="clues">
+      <div class="clue">
+        <strong>Palabras</strong><br>
+        1. Estructura básica de los seres vivos (6 letras)<br>
+        2. Molécula que almacena información genética (3 letras)<br>
+        3. Capa que rodea y protege, común en células (8 letras)<br>
+        4. Orgánulo que fabrica proteínas (8 letras)
+      </div>
+    </div>
+
+    <div id="status" class="status" aria-live="polite"></div>
+  </div>
+
+  <script>
+    (function(){
+      console.log('Crucigrama inline cargado');
+      const crosswordEl = document.getElementById('crossword');
+      const statusEl = document.getElementById('status');
+      if(!crosswordEl){ console.error('No se encontró #crossword'); return; }
+
+      const layout = [
+        ['C','E','L','U','L','A', null, null],
+        [null,null,null,null,null,null,null,null],
+        ['A','D','N', null,null,null,null,null],
+        [null,null,null,null,null,null,null,null],
+        ['M','E','M','B','R','A','N','A'],
+        [null,null,null,null,null,null,null,null],
+        ['R','I','B','O','S','O','M','A'],
+        [null,null,null,null,null,null,null,null]
+      ];
+      const acrossClues = [
+        {num:1,row:0,col:0,len:6,answer:'CELULA'},
+        {num:2,row:2,col:0,len:3,answer:'ADN'},
+        {num:4,row:4,col:0,len:8,answer:'MEMBRANA'},
+        {num:5,row:6,col:0,len:8,answer:'RIBOSOMA'}
+      ];
+
+      const cells = [];
+      crosswordEl.innerHTML = '';
+
+      for(let r=0;r<8;r++){
+        for(let c=0;c<8;c++){
+          const value = layout[r][c];
+          const cell = document.createElement('div');
+          cell.className = value === null ? 'cell black' : 'cell';
+
+          if(value === null){
+            crosswordEl.appendChild(cell); cells.push(null); continue;
+          }
+
+          const input = document.createElement('input');
+          input.type = 'text';
+          input.maxLength = 1;
+          input.dataset.row = r;
+          input.dataset.col = c;
+          input.autocomplete = 'off';
+          input.spellcheck = false;
+
+          input.addEventListener('input', function(e){
+            this.value = this.value.toUpperCase().replace(/[^A-ZÑÁÉÍÓÚÜ]/g,'');
+            const nr = Number(this.dataset.row), nc = Number(this.dataset.col);
+            const next = getInputAt(nr, nc+1);
+            if(next) next.focus();
+          });
+          input.addEventListener('keydown', function(e){
+            const rr = Number(this.dataset.row), cc = Number(this.dataset.col);
+            if(e.key === 'ArrowRight'){ const n = getInputAt(rr, cc+1); if(n){ e.preventDefault(); n.focus(); } }
+            else if(e.key === 'ArrowLeft'){ const p = getInputAt(rr, cc-1); if(p){ e.preventDefault(); p.focus(); } }
+            else if(e.key === 'ArrowDown'){ const d = getInputAt(rr+1, cc); if(d){ e.preventDefault(); d.focus(); } }
+            else if(e.key === 'ArrowUp'){ const u = getInputAt(rr-1, cc); if(u){ e.preventDefault(); u.focus(); } }
+            else if(e.key === 'Backspace' && this.value === ''){ const p = getInputAt(rr, cc-1); if(p){ e.preventDefault(); p.focus(); p.value=''; } }
+          });
+
+          cell.appendChild(input);
+
+          // número al inicio
+          if(c === 0 || layout[r][c-1] === null){
+            const num = document.createElement('div');
+            num.className = 'number';
+            const match = acrossClues.find(cl=>cl.row===r && cl.col===c);
+            num.textContent = match ? match.num : '';
+            cell.appendChild(num);
+          }
+
+          crosswordEl.appendChild(cell);
+          cells.push(input);
+        }
+      }
+
+      // helpers
+      function getInputAt(r,c){
+        if(r<0||r>7||c<0||c>7) return null;
+        const idx = r*8 + c;
+        const item = cells[idx];
+        if(!item || item.tagName !== 'INPUT') return null;
+        return item;
+      }
+
+      // botones
+      document.getElementById('checkBtn').addEventListener('click', ()=>{
+        let total=0, correct=0;
+        for(const clue of acrossClues){
+          total += clue.len;
+          const user = [];
+          for(let i=0;i<clue.len;i++){
+            const input = getInputAt(clue.row, clue.col + i);
+            user.push(input ? (input.value || '') : '');
+          }
+          const userStr = user.join('').toUpperCase();
+          if(userStr === clue.answer){
+            for(let i=0;i<clue.len;i++){
+              const input = getInputAt(clue.row, clue.col + i);
+              if(input) input.style.backgroundColor = '#e6ffef';
+            }
+            correct += clue.len;
+          } else {
+            for(let i=0;i<clue.len;i++){
+              const input = getInputAt(clue.row, clue.col + i);
+              if(!input) continue;
+              const ch = (input.value||'').toUpperCase();
+              input.style.backgroundColor = (ch === clue.answer[i]) ? '#e6ffef' : '#fff1f0';
+            }
+          }
+        }
+        if(statusEl) statusEl.textContent = `Letras correctas: ${correct} de ${total}`;
+      });
+
+      document.getElementById('revealBtn').addEventListener('click', ()=>{
+        if(!confirm('¿Revelar la solución?')) return;
+        for(const clue of acrossClues){
+          for(let i=0;i<clue.len;i++){
+            const input = getInputAt(clue.row, clue.col + i);
+            if(input){ input.value = clue.answer[i]; input.style.backgroundColor = '#e6ffef'; }
+          }
+        }
+        if(statusEl) statusEl.textContent = 'Solución revelada.';
+      });
+
+      document.getElementById('resetBtn').addEventListener('click', ()=>{
+        for(const el of cells){ if(!el) continue; el.value=''; el.style.backgroundColor=''; }
+        if(statusEl) statusEl.textContent = '';
+        const f = document.querySelector('#crossword .cell input'); if(f) f.focus();
+      });
+
+      document.addEventListener('paste', (e)=>{
+        const active = document.activeElement;
+        if(active && active.tagName === 'INPUT'){
+          e.preventDefault();
+          const text = (e.clipboardData || window.clipboardData).getData('text').toUpperCase();
+          if(!text) return;
+          const r = Number(active.dataset.row), c = Number(active.dataset.col);
+          for(let i=0;i<text.length;i++){
+            const t = getInputAt(r, c + i);
+            if(!t) break;
+            t.value = text[i].replace(/[^A-ZÑ]/g,'');
+          }
+        }
+      });
+
+      console.log('Crucigrama creado. Celdas totales:', document.querySelectorAll('#crossword .cell').length);
+    })();
+  </script>
+</section>
+<!-- --- FIN: bloque auto-contenido del crucigrama --- -->
+
+<!-- Carga el JS al final; defer ayuda a que se ejecute después del DOM -->
+
+
+   
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+   <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <a href="index.html" class="navbar-brand m-0">
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">K</span>itty ciencia♥</h1>
+                    </a>
+                </div>
+                <div class="col-12 mb-4">
+
+                    <a class="btn btn-outline-secondary btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-12 mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
+                            <h5 class="font-weight-bold mb-2">Sobre nosotros</h5>
+                            <p class="mb-2">Colegio Celco Sogamoso</p>
+                            <p class="mb-0">+57 3184256005</p>
+                        </div>
+                        <div class="col-sm-6 text-center text-sm-left">
+                            <h5 class="font-weight-bold mb-2">Contactanos</h5>
+                            <p class="mb-2">kittyciencias@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="cucigrama.js" defer></script>
+</body>
+
+</html>
